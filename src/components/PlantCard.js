@@ -25,7 +25,7 @@ function PlantCard({ plant, onUpdatePlant, onDeletePlant }) {
       fetch(`http://localhost:6001/plants/${id}`, {
         method: "PATCH",
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "Application/JSON",
         },
         body: JSON.stringify({ price: parseFloat(newPrice) }),
       })
@@ -61,7 +61,7 @@ function PlantCard({ plant, onUpdatePlant, onDeletePlant }) {
           autoFocus
         />
       ) : (
-        <p onClick={handlePriceClick}>Price: ${price}</p>
+        <p onClick={handlePriceClick}>Price: {price}</p>
       )}
       {inStock ? (
         <button className="primary" onClick={handleInStock}>In Stock</button>

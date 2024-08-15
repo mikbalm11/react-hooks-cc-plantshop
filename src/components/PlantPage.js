@@ -20,7 +20,7 @@ function PlantPage() {
     fetch(URL, {
       method: "POST",
       headers: {
-        "Content-Type": "application/json",
+        "Content-Type": "Application/JSON",
       },
       body: JSON.stringify(newPlant),
     })
